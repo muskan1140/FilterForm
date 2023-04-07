@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Form with Local Storage</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <h1><u>Enter Your Information</u></h1>
+    <form>
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" required maxlength="50" placeholder="Your Name.."><br><br>
+      <label for="height">Height:</label><br>
+      <input type="number" id="height" name="height" required maxlength="10" placeholder="Your Height.."><br><br>
+      <label for="weight">Weight:</label><br>
+      <input type="number" id="weight" name="weight" required maxlength="100" placeholder="Your Weight.."><br><br>
+      <label for="age">Age:</label><br>
+      <input type="number" id="age" name="age" required maxlength="100" placeholder="Your Age.."><br><br>
+      <button type="submit" class="btn">Submit</button>
+    </form>
+     <br>
+    <h1><u>Filter Your Data</u></h1>
+    <div id="filtering">
+      <label for="filter">Filter by:</label>
+      <select id="filter">
+        <option value="name">Name</option>
+        <option value="height">Height</option>
+        <option value="weight">Weight</option>
+        <option value="age">Age</option>
+      </select>
+      <label for="sort">Sort by:</label>
+      <select id="sort">
+        <option value="ascending">Ascending</option>
+        <option value="descending">Descending</option>
+      </select>
+  </div>
+  <br>
+    <h1>Your Data</h1>
+    <ul id="data"></ul>
+
+    <script src="script.js"></script>
+  </body>
+</html>
